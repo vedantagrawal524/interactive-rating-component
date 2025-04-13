@@ -23,13 +23,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 /* Rating */
 
 .rating,
 .thanks {
-  margin: 2em;
   background-color: var(--grey-900);
   max-width: 21em;
   border-radius: 2em;
@@ -70,6 +70,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 1em;
 }
 
 .rate-button {
@@ -80,6 +81,7 @@ button {
   border-radius: 50%;
   color: var(--grey-500);
   font-weight: 700;
+  transition: box-shadow 0.3s ease;
 }
 
 .rate-button:hover {
@@ -87,9 +89,14 @@ button {
   color: var(--grey-950);
 }
 
-.rate-button:active {
+.rate-button.active {
   background-color: var(--white);
   color: var(--grey-950);
+}
+
+.rate-button.error {
+  box-shadow: 0px 0px 1px 1.5px hsl(4, 100%, 67%);
+  transition: box-shadow 0.2s ease;
 }
 
 .submit {
@@ -107,6 +114,7 @@ button {
 
 .submit:hover {
   background-color: var(--white);
+  box-shadow: 0px 0px 1px 1.5px var(--orange-500);
 }
 
 /* Thanks */
@@ -161,6 +169,9 @@ button {
 
 @media screen and (max-width: 320px) {
   html {
-    font-size: 10x;
+    font-size: 9x;
+  }
+  .rating-options {
+    gap: 0.5em;
   }
 }
