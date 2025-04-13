@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Interactive rating component" />
+    <meta name="author" content="Vedant Agrawal" />
+
+    <title>Interactive rating component</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <section class="rating">
+        <img src="/images/icon-star.svg" alt="Star" width="17" height="16" />
+
+        <h1 class="head">How did we do?</h1>
+        <p class="text">
+          How did we do? Please let us know how we did with your support
+          request. All feedback is appreciated to help us improve our offering!
+        </p>
+
+        <div class="rating-options">
+          <button class="rate-button" value="1">1</button>
+          <button class="rate-button" value="2">2</button>
+          <button class="rate-button" value="3">3</button>
+          <button class="rate-button" value="4">4</button>
+          <button class="rate-button" value="5">5</button>
+        </div>
+
+        <button class="submit">Submit</button>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="thanks hide">
+        <img
+          src="/images/illustration-thank-you.svg"
+          alt="Feedback"
+          width="162"
+          height="108"
+        />
+
+        <p class="rated">
+          You selected <span class="rate-value"></span> out of 5
+        </p>
+
+        <h1 class="head">Thank you!</h1>
+        <p class="text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </main>
+  </body>
+</html>
