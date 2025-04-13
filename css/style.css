@@ -5,6 +5,7 @@
 
   --white: hsl(0, 100%, 100%);
   --grey-500: hsl(217, 12%, 63%);
+  --grey-700: hsl(210, 21%, 21%);
   --grey-900: hsl(213, 19%, 18%);
   --grey-950: hsl(216, 12%, 8%);
 }
@@ -13,5 +14,153 @@ html {
   font-family: "Overpass", sans-serif;
   font-size: 15px;
   font-weight: 400;
-  /* font-weight: 700; */
+  color: var(--grey-500);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--grey-950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Rating */
+
+.rating,
+.thanks {
+  margin: 2em;
+  background-color: var(--grey-900);
+  max-width: 21em;
+  border-radius: 2em;
+  padding: 1.8em;
+  display: flex;
+  flex-direction: column;
+}
+
+.rating img {
+  padding: 0.8em;
+  background-color: var(--grey-700);
+  border-radius: 50%;
+}
+
+.head {
+  color: var(--white);
+  font-size: 1.9em;
+  margin-top: 1.1em;
+  margin-bottom: 0.2em;
+}
+
+.message {
+  margin-top: 0.6em;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+button {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.rating-options {
+  margin-top: 0.6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rate-button {
+  padding: 1em;
+  background-color: var(--grey-700);
+  width: 3.4em;
+  height: 3.4em;
+  border-radius: 50%;
+  color: var(--grey-500);
+  font-weight: 700;
+}
+
+.rate-button:hover {
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+}
+
+.rate-button:active {
+  background-color: var(--white);
+  color: var(--grey-950);
+}
+
+.submit {
+  margin-top: 1.5em;
+  padding: 0.7em;
+  font-size: 1em;
+  border-radius: 2em;
+  background-color: var(--orange-500);
+  color: var(--grey-950);
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.submit:hover {
+  background-color: var(--white);
+}
+
+/* Thanks */
+.thanks {
+  align-items: center;
+}
+
+.thanks img {
+  width: 9.5em;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.rated {
+  padding: 0.3em 1em;
+  border-radius: 1.5em;
+  background-color: var(--grey-700);
+  color: var(--orange-500);
+  margin-bottom: 0.1em;
+}
+
+.thanks .head {
+  font-size: 1.7em;
+  margin-bottom: 0.1em;
+}
+
+.thanks .message {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 620px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10x;
+  }
 }
