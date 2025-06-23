@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
   rating: {
-    type: Number,
+    type: Int32,
     required: true,
   },
 });

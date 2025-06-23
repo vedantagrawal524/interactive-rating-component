@@ -19,9 +19,8 @@ function switchSections() {
   thanks.classList.toggle("hide");
 }
 
-const API_BASE_URL = "https://interactive-rating-component-b4zo.onrender.com/";
+const API_BASE_URL = "https://interactive-rating-component-b4zo.onrender.com";
 submitButton.addEventListener("click", async () => {
-  //   e.preventDefault();
   if (rateValue === 0) {
     rateButtons.forEach((btn) => btn.classList.add("error"));
     setTimeout(() => {
