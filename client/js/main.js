@@ -19,7 +19,7 @@ function switchSections() {
   thanks.classList.toggle("hide");
 }
 
-const API_BASE_URL = "";
+const API_BASE_URL = "https://interactive-rating-component-b4zo.onrender.com/";
 submitButton.addEventListener("click", async () => {
   e.preventDefault();
   if (rateValue === 0) {
