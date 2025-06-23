@@ -10,7 +10,7 @@ rateButtons.forEach((button) => {
   button.addEventListener("click", () => {
     rateButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
-    rateValue = parseInt(button.value);
+    rateValue = parseFloat(button.value);
   });
 });
 
