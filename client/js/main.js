@@ -21,7 +21,7 @@ function switchSections() {
 
 const API_BASE_URL = "https://interactive-rating-component-b4zo.onrender.com/";
 submitButton.addEventListener("click", async () => {
-  e.preventDefault();
+  //   e.preventDefault();
   if (rateValue === 0) {
     rateButtons.forEach((btn) => btn.classList.add("error"));
     setTimeout(() => {
